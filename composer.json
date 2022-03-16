@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "ibex/crud-generator": "^1.3"
+    }
+}
