@@ -48,7 +48,7 @@ class ClubController extends Controller
         $club = Club::create($request->all());
 
         return redirect()->route('club.index')
-            ->with('success', 'Club created successfully.');
+            ->with('success', 'Club creat.');
     }
 
     /**
@@ -91,7 +91,7 @@ class ClubController extends Controller
         $club->update($request->all());
 
         return redirect()->route('club.index')
-            ->with('success', 'Club updated successfully');
+            ->with('success', 'Club modificat');
     }
 
     /**
@@ -104,6 +104,6 @@ class ClubController extends Controller
         $club = Club::find($id)->delete();
 
         return redirect()->route('club.index')
-            ->with('success', 'Club deleted successfully');
+            ->with('success', 'Club esborrat');
     }
 }

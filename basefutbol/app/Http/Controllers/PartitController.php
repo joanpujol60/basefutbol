@@ -52,7 +52,7 @@ class PartitController extends Controller
         $partit = Partit::create($request->all());
 
         return redirect()->route('partit.index')
-            ->with('success', 'Partit created successfully.');
+            ->with('success', 'Partit creat.');
     }
 
     /**
@@ -96,7 +96,7 @@ class PartitController extends Controller
         $partit->update($request->all());
 
         return redirect()->route('partit.index')
-            ->with('success', 'Partit updated successfully');
+            ->with('success', 'Partit modificat');
     }
 
     /**
@@ -109,6 +109,6 @@ class PartitController extends Controller
         $partit = Partit::find($id)->delete();
 
         return redirect()->route('partit.index')
-            ->with('success', 'Partit deleted successfully');
+            ->with('success', 'Partit borrat');
     }
 }

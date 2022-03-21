@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    {{ $club->name ?? 'Show Club' }}
+    {{ $club->name ?? 'Mostrar Club' }}
 @endsection
 
 @section('content')
@@ -11,10 +11,10 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Club</span>
+                            <span class="card-title">Mostrar Club</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('club.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('club.index') }}"> Tornar</a>
                         </div>
                     </div>
 

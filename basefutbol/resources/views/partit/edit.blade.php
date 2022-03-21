@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Update Partit</span>
+                        <span class="card-title">Modificar Partit</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('partit.update', $partit->id) }}"  role="form" enctype="multipart/form-data">
